@@ -1,0 +1,26 @@
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+form > div {
+	font-family: "Bungee";
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+textarea {
+	display: flex;
+	width: 100%;
+	background: transparent;
+	border: 0 none;
+	border-bottom: solid #545149;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+div > button {
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #4056a1;
+}
