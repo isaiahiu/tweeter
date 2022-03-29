@@ -1,0 +1,10 @@
+header {
+	height: 400px;
+	width: 100%;
+	background-color: aliceblue;
+	background-image: url("../images/concrete-wall-2.png");
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
