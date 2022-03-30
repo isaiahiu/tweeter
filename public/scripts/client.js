@@ -61,7 +61,12 @@ function renderTweets(arr) {
 	}
 }
 
+renderTweets(tweetData);
 // Test / driver code (temporary)
 $(() => {
-	renderTweets(tweetData);
+	$("form").submit(event => {
+		event.preventDefault();
+		let text = $("#tweet-text").serialize();
+		$.post("/tweets", text);
+	});
 });
