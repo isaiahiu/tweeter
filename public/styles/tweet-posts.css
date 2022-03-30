@@ -43,3 +43,11 @@ article.tweet footer span i {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
+.gold {
+	color: gold;
+}
+
+.box-hover {
+	box-shadow: 5px 5px 5px 0px #3e3e3e73;
+}
