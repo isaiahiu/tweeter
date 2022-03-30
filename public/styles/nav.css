@@ -6,7 +6,7 @@ nav {
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: flex-end;
-	position: fixed;
+	position: sticky;
 	height: 120px;
 	width: 100%;
 	top: 0;
