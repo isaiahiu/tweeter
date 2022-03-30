@@ -45,7 +45,7 @@ article.tweet footer span i {
 }
 
 .gold {
-	color: gold;
+	color: gold !important;
 }
 
 .box-hover {
