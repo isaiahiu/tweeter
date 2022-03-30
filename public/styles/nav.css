@@ -2,12 +2,14 @@ nav {
 	display: flex;
 	color: #ffffff;
 	background-color: #4056a1;
-	height: 120px;
-	width: 100%;
 	padding: 1.5em 1.5em 24px 1.5em;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: flex-end;
+	position: fixed;
+	height: 120px;
+	width: 100%;
+	top: 0;
 }
 
 .navside {
