@@ -37,7 +37,6 @@ function renderTweets(arr) {
 
 function loadTweets() {
 	$.get("/tweets").then(data => {
-		console.log(data);
 		renderTweets(data);
 	});
 }
@@ -45,8 +44,16 @@ function loadTweets() {
 $(() => {
 	$("form").submit(event => {
 		event.preventDefault();
-		let text = $("#tweet-text").serialize();
-		$.post("/tweets", text);
+		let $text = $("#tweet-text").serialize();
+
+		if (!$("#tweet-text").val()) {
+			return alert("Empty tweet!");
+		}
+		if ($("#tweet-text").val().length > 140) {
+			return alert("Too many characters!");
+		}
+
+		$.post("/tweets", $text);
 	});
 
 	loadTweets();
