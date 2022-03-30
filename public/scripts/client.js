@@ -17,7 +17,7 @@ function createTweetElement(tweet) {
 			<p>${tweet.content.text}
 			</p>
 			<footer>
-				<span>${tweet.created_at}</span>
+				<span>${timeago.format(tweet.created_at)}</span>
 				<span>
 					<i class="fa-solid fa-heart"></i>
 					<i class="fa-solid fa-flag"></i>
