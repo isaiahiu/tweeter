@@ -18,7 +18,7 @@ function createTweetElement(tweet) {
 			</p>
 			<footer>
 				<span>${timeago.format(tweet.created_at)}</span>
-				<span>
+				<span class="icon-hover">
 					<i class="fa-solid fa-heart"></i>
 					<i class="fa-solid fa-flag"></i>
 					<i class="fa-solid fa-retweet"></i>
@@ -31,7 +31,7 @@ function createTweetElement(tweet) {
 function renderTweets(arr) {
 	for (let tweet of arr) {
 		let $post = createTweetElement(tweet);
-		$(".container").append($post);
+		$("#feed").prepend($post);
 	}
 }
 
@@ -42,6 +42,7 @@ function loadTweets() {
 }
 
 $(() => {
+	loadTweets();
 	$("form").submit(event => {
 		event.preventDefault();
 		let $text = $("#tweet-text").serialize();
@@ -53,8 +54,11 @@ $(() => {
 			return alert("Too many characters!");
 		}
 
-		$.post("/tweets", $text);
+		$.post("/tweets", $text).then(() => {
+			$("#feed").empty();
+			loadTweets();
+			$(".counter").html(140);
+			$("form").trigger("reset");
+		});
 	});
-
-	loadTweets();
 });

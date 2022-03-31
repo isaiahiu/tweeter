@@ -50,10 +50,10 @@ article.tweet footer span i {
 	margin-right: 5px;
 }
 
-.gold {
-	color: gold !important;
+article:hover {
+	box-shadow: 5px 5px 5px 0px #3e3e3e73;
 }
 
-.box-hover {
-	box-shadow: 5px 5px 5px 0px #3e3e3e73;
+span.icon-hover i:hover {
+	color: gold;
 }
