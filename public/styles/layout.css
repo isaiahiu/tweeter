@@ -33,3 +33,7 @@ body {
 main {
 	width: 90%;
 }
+
+div.page {
+	display: contents;
+}

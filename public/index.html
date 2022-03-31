@@ -2,7 +2,10 @@
 <html lang="en">
 	<head>
 		<!-- Meta Information -->
-
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+		/>
 		<title>Tweeter - Home Page</title>
 
 		<!-- External CSS -->
@@ -30,6 +33,7 @@
 		<link rel="stylesheet" href="./styles/header.css" type="text/css" />
 		<link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
 		<link rel="stylesheet" href="./styles/tweet-posts.css" type="text/css" />
+		<link rel="stylesheet" href="./styles/media-types.css" type="text/css" />
 
 		<!-- External JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -58,38 +62,42 @@
 				<i class="fa-solid fa-angles-down fa-sm"></i>
 			</div>
 		</nav>
-		<header>
-			<div>
-				<img src="./images/profile-hex.png" />
-			</div>
-			<br />
-			<div>
-				<h2>Your Name</h2>
-			</div>
-		</header>
+		<div class="page">
+			<header>
+				<div>
+					<img src="./images/profile-hex.png" />
+				</div>
+				<br />
+				<div>
+					<h2>Your Name</h2>
+				</div>
+			</header>
 
-		<!-- Page-specific (main) content here -->
-		<main class="container">
-			<section class="new-tweet">
-				<label id="empty" class="error-message hide" for="tweet-text"
-					>No input! Try typing something instead.</label
-				>
-				<label id="overlimit" class="error-message hide" for="tweet-text"
-					>Too many characters! Try to shorten your tweet.</label
-				>
-				<form action="/tweets/" method="POST">
-					<textarea
-						placeholder="What are you humming about?"
-						name="text"
-						id="tweet-text"
-					></textarea>
-					<div>
-						<button type="submit">Tweet</button>
-						<output name="counter" class="counter" for="tweet-text">140</output>
-					</div>
-				</form>
-			</section>
-			<section id="feed"></section>
-		</main>
+			<!-- Page-specific (main) content here -->
+			<main class="container">
+				<section class="new-tweet">
+					<label id="empty" class="error-message hide" for="tweet-text"
+						>No input! Try typing something instead.</label
+					>
+					<label id="overlimit" class="error-message hide" for="tweet-text"
+						>Too many characters! Try to shorten your tweet.</label
+					>
+					<form action="/tweets/" method="POST">
+						<textarea
+							placeholder="What are you humming about?"
+							name="text"
+							id="tweet-text"
+						></textarea>
+						<div>
+							<button type="submit">Tweet</button>
+							<output name="counter" class="counter" for="tweet-text"
+								>140</output
+							>
+						</div>
+					</form>
+				</section>
+				<section id="feed"></section>
+			</main>
+		</div>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-article.tweet {
+.tweet {
 	display: flex;
 	flex-direction: column;
 	border: solid black;
@@ -8,7 +8,7 @@ article.tweet {
 	gap: 20px;
 }
 
-article.tweet header {
+.tweet header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -20,22 +20,22 @@ article.tweet header {
 	font-size: 18px;
 }
 
-article.tweet header span:first-child {
+.tweet header span:first-child {
 	display: inherit;
 	gap: 13px;
 }
-article.tweet header h3 {
+.tweet header h3 {
 	display: inline;
 }
 
-article.tweet p {
+.tweet p {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 20px;
 	margin-bottom: 0;
 }
 
-article.tweet footer {
+.tweet footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -44,13 +44,13 @@ article.tweet footer {
 	padding: 10px;
 }
 
-article.tweet footer span i {
+.tweet footer span i {
 	color: #4056a1;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
-article:hover {
+.tweet:hover {
 	box-shadow: 5px 5px 5px 0px #3e3e3e73;
 }
 
