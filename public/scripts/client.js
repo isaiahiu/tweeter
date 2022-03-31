@@ -3,8 +3,14 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+function escape(str) {
+	let div = document.createElement("div");
+	div.appendChild(document.createTextNode(str));
+	return div.innerHTML;
+}
 
 function createTweetElement(tweet) {
+	const safeHTML = `${escape(tweet.content.text)}`;
 	const $tweet = `			
     <article class="tweet">
 			<header>
@@ -14,7 +20,7 @@ function createTweetElement(tweet) {
 				</span>
 				<span>${tweet.user.handle}</span>
 			</header>
-			<p>${tweet.content.text}
+			<p>${safeHTML}
 			</p>
 			<footer>
 				<span>${timeago.format(tweet.created_at)}</span>
