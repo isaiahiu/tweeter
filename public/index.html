@@ -71,8 +71,13 @@
 		<!-- Page-specific (main) content here -->
 		<main class="container">
 			<section class="new-tweet">
+				<label id="empty" class="error-message hide" for="tweet-text"
+					>No input! Try typing something instead.</label
+				>
+				<label id="overlimit" class="error-message hide" for="tweet-text"
+					>Too many characters! Try to shorten your tweet.</label
+				>
 				<form action="/tweets/" method="POST">
-					<label for="tweet-text"></label>
 					<textarea
 						placeholder="What are you humming about?"
 						name="text"

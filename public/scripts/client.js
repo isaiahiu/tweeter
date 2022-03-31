@@ -52,12 +52,14 @@ $(() => {
 	$("form").submit(event => {
 		event.preventDefault();
 		let $text = $("#tweet-text").serialize();
+		$("#empty").slideUp();
+		$("#overlimit").slideUp();
 
 		if (!$("#tweet-text").val()) {
-			return alert("Empty tweet!");
+			return $("#empty").slideDown();
 		}
 		if ($("#tweet-text").val().length > 140) {
-			return alert("Too many characters!");
+			return $("#overlimit").slideDown();
 		}
 
 		$.post("/tweets", $text).then(() => {
