@@ -4,12 +4,13 @@
 		flex-direction: row;
 		align-items: flex-start;
 		width: 100%;
+		background-color: aliceblue;
+		background-image: url("../images/concrete-wall-2.png");
 	}
 
 	.page > header {
 		margin-top: 20vh;
 		background-color: inherit;
-		background-image: none;
 	}
 
 	.container {
