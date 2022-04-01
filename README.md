@@ -6,9 +6,8 @@ Created by isaiahiu as a front-end (client-side) educational exercise .
 
 ## Final Product
 
-!["Screenshot of Homepage"](https://github.com/isaiahiu/tinyapp/blob/master/docs/urls-page.png?raw=true)
-!["Screenshot of Registration page"](https://github.com/isaiahiu/tinyapp/blob/master/docs/register-page.png?raw=true)
-!["Screenshot of Short Url page"](https://github.com/isaiahiu/tinyapp/blob/master/docs/shorturl-page.png?raw=true)
+!["Screenshot of Desktop view"](https://github.com/isaiahiu/tweeter/blob/master/docs/tweeter-full.jpg?raw=true)
+!["Screenshot of Mobile view"](https://github.com/isaiahiu/tweeter/blob/master/docs/tweeter-mobile.jpg?raw=true)
 
 ## Dependencies
 
@@ -20,9 +19,10 @@ Created by isaiahiu as a front-end (client-side) educational exercise .
 ## Getting Started
 
 - Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
-- Navigate to `localhost:3000` in a browser where users will be prompted to log in.
-
+- Run the development web server using the `node express_server.js` command, or
+  alternatively `npm start`.
+- Navigate to `localhost:3000` in a browser, resize window or compose a new tweet.
+- Click compose button in the navigation bar to toggle compose tweet form.
 
 ## Project Features
 
