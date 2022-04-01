@@ -22,9 +22,7 @@ Created by isaiahiu as a front-end (client-side) educational exercise .
 - Install all dependencies (using the `npm install` command).
 - Run the development web server using the `node express_server.js` command.
 - Navigate to `localhost:3000` in a browser where users will be prompted to log in.
-- Register link will be available in the top right corner of header of users without an account.
-- Users must be logged in to be able to create new URLs, edit, or delete their own URLs.
-- Without an account, user can still use short links.
+
 
 ## Project Features
 
