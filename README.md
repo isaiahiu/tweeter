@@ -77,5 +77,5 @@ Created by isaiahiu as a front-end (client-side) educational exercise .
     - [x] if the Compose Tweet box is currently showing, then it is hidden
     - [x] in either case, transitions between 'shown' and 'hidden' states should be animated
 - Second Toggle Button:
-  - [ ] When a user scrolls a second button appears in the lower right hand corner:
+  - [ ] When a user scrolls a second button appears in the lower right hand corner
   - [ ] if the user clicks this button they are brought back up to the top of the page
