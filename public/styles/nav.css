@@ -19,10 +19,9 @@ nav {
 }
 i {
 	color: red;
-	padding-top: 10px;
 }
 #nav-logo {
-	font-size: larger;
+	font-size: 1.5em;
 	font-family: "Bungee";
 	display: flex;
 	align-self: flex-end;
@@ -34,6 +33,6 @@ i {
 	cursor: pointer;
 }
 
-#compose:hover {
+#compose > i:hover {
 	color: #b2d8f1;
 }

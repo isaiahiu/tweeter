@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1024px) {
-	body {
-		background-color: aliceblue;
+	  body {
 		background-image: url("../images/concrete-wall-2.png");
+		background-color: aliceblue;
 	}
 
 	div.page {

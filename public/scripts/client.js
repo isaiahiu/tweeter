@@ -53,7 +53,7 @@ $(() => {
 	$("#compose").on("click", () => {
 		$(".new-tweet").slideToggle();
 	});
-
+		
 	$("form").submit(event => {
 		event.preventDefault();
 		let $text = $("#tweet-text").serialize();
