@@ -1,12 +1,17 @@
+/* 
+CSS rules for sizing and adding background to header, flex container of columns 
+to align avatar and name content
+*/
+
 header {
-	height: 400px;
-	width: 100%;
-	background-color: aliceblue;
-	background-image: url("../images/concrete-wall-2.png");
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	background-color: aliceblue;
+	background-image: url("../images/concrete-wall-2.png"); 
+	height: 400px;
+	width: 100%;
 }
 
 

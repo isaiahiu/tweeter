@@ -1,3 +1,6 @@
+/* css rules for the nav bar */
+
+/* flex container here to have logo and compose button on opposite ends */
 nav {
 	display: flex;
 	color: #ffffff;
@@ -9,17 +12,21 @@ nav {
 	position: sticky;
 	height: 120px;
 	width: 100%;
-	top: 0;
 }
 
+/* text and button to be a column */
 .navside {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 }
+
+/* arrow to be red */
 i {
 	color: red;
 }
+
+/* logo to be closer to the bottom of the nav bar on purpose */
 #nav-logo {
 	font-size: 1.5em;
 	font-family: "Bungee";
@@ -33,6 +40,7 @@ i {
 	cursor: pointer;
 }
 
+/* compose button arrow will change color on hover */
 #compose > i:hover {
 	color: #b2d8f1;
 }

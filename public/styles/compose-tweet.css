@@ -1,3 +1,5 @@
+/* Rules to create a compose tweet box here */
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -5,45 +7,52 @@ section {
 }
 
 form > div {
-	font-family: "Bungee";
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
+	flex-direction: row;
+	font-family: "Bungee";
 }
 
 textarea {
 	display: flex;
-	width: 100%;
 	background: transparent;
-	border: 0 none;
-	border-bottom: solid #545149;
 	margin-bottom: 20px;
 	padding-top: 20px;
+	width: 100%;
+	border: 0 none;
+	border-bottom: solid #545149;
 }
+
+/* remove blue line border on focus */
 textarea:focus-visible {
 	outline: none;
 }
 
+/* tweet submit styles */
 div > button {
-	font-size: 18px;
 	color: #ffffff;
 	background-color: #4056a1;
+	font-size: 18px;
 }
 
+/* For changing character counter to red using jQuery */
 .red {
 	color: red;
 }
 
+/* Error message rules */
 .error-message {
 	display: block;
 	text-align: center;
+	margin: 20px;
+	padding: 0.75rem 1.25rem;
 	color: red;
 	background-color: #f8d7da;
 	border-color: #f5c6cb;
 	border-radius: 0.25rem;
-	padding: 0.75rem 1.25rem;
-	margin: 20px;
 }
+
+/* For error messages */
 .hide {
 	display: none;
 }

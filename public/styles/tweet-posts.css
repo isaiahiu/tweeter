@@ -1,34 +1,42 @@
+/* Style rules for all tweets here */
+
+/* flex container to be column, 3 child containers */
 .tweet {
 	display: flex;
 	flex-direction: column;
 	border: solid black;
-	padding: 15px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	padding: 15px;
 	gap: 20px;
 	background-color: #f4f1ec;
 }
 
+/* first child container, will be a flex container of rows for avatar,name and handle */
 .tweet header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	background-image: none;
-	background-color: transparent;
-	height: 10%;
+	flex-direction: row;
 	padding-left: 10px;
 	padding-right: 10px;
+	height: 10%;
 	font-size: 18px;
+	background-image: none;
+	background-color: transparent;
 }
 
+/* inherits row  */
 .tweet header span:first-child {
 	display: inherit;
 	gap: 13px;
 }
+
+/* inline since h3 defaults to block, name will be side by side with avatar here  */
 .tweet header h3 {
 	display: inline;
 }
 
+/* tweet text here */
 .tweet p {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -36,6 +44,7 @@
 	margin-bottom: 0;
 }
 
+/* footer is container of its own, will have row childs for timeago and icons */
 .tweet footer {
 	display: flex;
 	flex-direction: row;
@@ -51,10 +60,12 @@
 	margin-right: 5px;
 }
 
+/* all tweet posts will have a shadow on hover */
 .tweet:hover {
 	box-shadow: 5px 5px 5px 0px #3e3e3e73;
 }
 
+/* all icons in a tweet post will change to gold on hover */
 span.icon-hover i:hover {
 	color: gold;
 }
